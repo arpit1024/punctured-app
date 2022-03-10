@@ -1,0 +1,35 @@
+nav {
+  background-color: lightcyan;
+}
+nav > h1 {
+  font-family: cursive;
+  font-size: xx-large;
+  color: cadetblue;
+  cursor: pointer;
+}
+nav,
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+ul li {
+  list-style-type: none;
+  margin-right: 20px;
+  background-color: rgb(225, 237, 244);
+  border-radius: 8px;
+  padding: 8px;
+}
+ul li:hover {
+  background-color: rgb(0, 194, 193);
+  transition: 0.2s;
+}
+.link-tag {
+  text-decoration: none;
+  color: #004b5d;
+  font-size: larger;
+  margin-left: 3px;
+}

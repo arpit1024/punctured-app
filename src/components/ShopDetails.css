@@ -1,0 +1,26 @@
+#details-cont {
+  margin: 50px 0 50px 0;
+}
+#details-cont > div {
+  line-height: 25px;
+}
+.btns {
+  background-color: coral;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#btn-effects:hover {
+  transform: scaleY(1.2);
+  transition: 0.5s;
+  color: green;
+}
+.heading {
+  font-size: x-large;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: cadetblue;
+}

@@ -1,0 +1,117 @@
+:root {
+  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+body {
+  background-color: #f6f6f6;
+}
+.shops-container {
+  justify-content: center;
+  border: 0.5px solid lightcyan;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 20px;
+  background-color: #fff;
+}
+
+.pro-cont > div {
+  line-height: 25px;
+  background-color: #f6f6f7;
+  cursor: alias;
+}
+.pro-cont > button {
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pro-cont :hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  transform: scaleZ(5);
+  transform: scaleX(1.1);
+}
+.pro-cont > img {
+  width: 100%;
+}
+.seach-box {
+  width: 350px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.filters-container {
+  width: fit-content;
+  margin: auto;
+}
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+@media screen and (max-width: 800px) {
+  .search-container {
+    flex-direction: column;
+  }
+  .shops-container {
+    grid-template-columns: repeat(2, 47%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+  }
+  .shops-container {
+    grid-template-columns: repeat(1, 90%);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .shops-container {
+    grid-template-columns: repeat(4, 22%);
+  }
+}

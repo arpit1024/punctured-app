@@ -6,7 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+#hisCont {
+  width: fit-content;
+  padding: 50px;
+  margin: auto;
+  background-color: #61dafb;
+}
+.margin {
+  margin-top: 20px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
